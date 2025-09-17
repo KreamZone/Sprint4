@@ -1,9 +1,6 @@
-package Task;
+package task;
 
-import TaskStatus.TaskStatus;
-
-import java.util.ArrayList;
-import java.util.List;
+import taskStatus.TaskStatus;
 
 public class Subtask extends Task{
     private final Epic masterTask;

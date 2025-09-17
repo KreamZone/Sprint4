@@ -1,12 +1,12 @@
-package Task;
+package task;
 
-import TaskStatus.TaskStatus;
+import taskStatus.TaskStatus;
 
 public class Task {
     protected String taskName;
     protected String taskDescription;
     protected TaskStatus taskStatus;
-    protected int taskID;
+    protected Integer taskID;
 
     public Task(String taskName, String taskDescription, TaskStatus taskStatus) {
         this.taskDescription = taskDescription;

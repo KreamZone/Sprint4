@@ -1,9 +1,9 @@
-package Main;
+package main;
 
-import Task.Epic;
-import Task.Subtask;
-import Task.Task;
-import TaskStatus.TaskStatus;
+import task.Epic;
+import task.Subtask;
+import task.Task;
+import taskStatus.TaskStatus;
 import taskManager.TaskManager;
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +16,7 @@ public class Main {
         Subtask subtask1 = new Subtask("Одежда","Нужно взять всю одежду",TaskStatus.NEW, epic1);
         Subtask subtask2 = new Subtask("Инструменты","Нужно взять все инструменты",TaskStatus.NEW, epic1);
         Subtask subtask3 = new Subtask("Ул. Тверская 9","Нужно позвонить по номеру",TaskStatus.NEW,epic2);
+        Subtask subtask4 = new Subtask("Ул. gergg 9","Нужно dbf по номеру",TaskStatus.NEW,epic2);
         //Subtask newSubtask1 = new Subtask("Не одежда", "не Взяли одежду", TaskStatus.IN_PROCESS,epic1);
 
         taskManager.addNewSubtask(subtask1, epic1);

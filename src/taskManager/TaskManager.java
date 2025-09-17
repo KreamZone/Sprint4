@@ -2,34 +2,14 @@ package taskManager;
 
 import java.util.*;
 
-import Task.*;
-import TaskStatus.TaskStatus;
+import task.*;
+import taskStatus.TaskStatus;
 
 public class TaskManager {
-    private int ID = 0;
+    private Integer ID = 0;
     public Map<Integer, Subtask> subtask = new HashMap<>();
     public Map<Integer, Task> task = new HashMap<>();
     public Map<Integer , Epic> epic = new HashMap<>();
-
-    public Map<Integer, Subtask> getSubtask() {
-        return subtask;
-    }
-
-    public Map<Integer, Task> getTask() {
-        return task;
-    }
-
-    public Map<Integer, Epic> getEpic() {
-        return epic;
-    }
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
 
     public List<Subtask> getAllSubtasks () {
         List<Subtask> subtasks = new ArrayList<>();
